@@ -54,7 +54,7 @@ namespace AutoModTests
 
         [Theory]
         [MemberData(nameof(GetLivingDexTestData))]
-        public static void VerifyDex(GameVersion game, LivingDexConfig cfg)
+       public static void VerifyDex(GameVersion game, LivingDexConfig cfg)
         {
             var dir = Directory.GetCurrentDirectory();
             APILegality.Timeout = 99999;
